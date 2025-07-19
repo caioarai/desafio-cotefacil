@@ -6,6 +6,7 @@ import ToDoList from './components/ToDoList/ToDoList';
 import Galeria from './components/Galeria/Galeria';
 import Dashboard from './components/Dashboard/Dashboard';
 import { TasksProvider } from './context/TasksContext';
+import Photo from './components/Galeria/Photo';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<ToDoList />}></Route>
               <Route path="/galeria" element={<Galeria />}></Route>
+              <Route path="/galeria/photo/:id" element={<Photo />}></Route>
               <Route path="/dashboard" element={<Dashboard />}></Route>
             </Routes>
           </div>

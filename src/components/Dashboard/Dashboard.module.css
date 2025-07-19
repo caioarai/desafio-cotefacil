@@ -9,7 +9,7 @@
   margin-top: 2rem;
 }
 
-.title h2{
+.dashboard .title h2{
   margin-left: .5rem;
 }
 
@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .grafico p{
@@ -26,7 +27,7 @@
 
 .box{
   background-color: #c2e0ff;
-  margin-left: 5px;
+  margin: 5px 0 0 5px;
   padding: 10px;
   border-radius: 5px;
   width: 150px;

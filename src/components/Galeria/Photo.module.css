@@ -1,0 +1,19 @@
+.photo{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo img, .description h2{
+  width: 100%;
+  max-width: 500px;
+}
+
+.likes{
+  margin: 5px 0 10px 0;
+}
+
+.backBtn{
+  color: black;
+  margin-bottom: 2rem;
+  width: 150px;
+}

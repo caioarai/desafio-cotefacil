@@ -30,6 +30,7 @@ input[type='text']:focus, select:focus {
   font-size: 16px;
   transition: background-color 0.2s ease;
   margin-top: 10px;
+  background-color: #e0e0e0;
 }
 
 .btn-primary{
@@ -61,8 +62,11 @@ input[type='text']:focus, select:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
   width: 300px;
+}
+
+.task input[type="checkbox"]{
+  cursor: pointer;
 }
 
 .task h3{
