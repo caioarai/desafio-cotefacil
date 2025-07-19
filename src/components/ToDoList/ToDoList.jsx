@@ -1,3 +1,4 @@
+import { useTasksContext } from '../../context/TasksContext';
 import useTasks from '../../hooks/useTasks';
 import styles from './ToDoList.module.css';
 import { IoClose, IoPencil } from 'react-icons/io5';
@@ -15,7 +16,7 @@ const ToDoList = () => {
     handleDelete,
     toggleChecked,
     handleCancel,
-  } = useTasks();
+  } = useTasksContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,6 +26,7 @@ const ToDoList = () => {
 
   return (
     <section className={styles.sectionList}>
+      <h2>Adicione uma tarefa</h2>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="task">Tarefa:</label>
         <input
@@ -44,7 +46,7 @@ const ToDoList = () => {
           <option value="">-- Selecione --</option>
           <option value="Pendente">Pendente</option>
           <option value="Em Progresso">Em progresso</option>
-          <option value="Cocluída">Concluída</option>
+          <option value="Concluída">Concluída</option>
         </select>
         <button type="submit" className="btn btn-primary">
           {edit ? 'Editar' : 'Salvar'}
@@ -65,9 +67,9 @@ const ToDoList = () => {
           <p style={{ textAlign: 'center ' }}>Nenhuma tarefa</p>
         ) : (
           taskList.map((task) => (
-            <div key={task.id} className={styles.task}>
+            <div key={task.id} className="task">
               <span>
-                <label htmlFor={`task-${task.id}`}>
+                <h3 htmlFor={`task-${task.id}`}>
                   <input
                     type="checkbox"
                     name="task"
@@ -76,7 +78,7 @@ const ToDoList = () => {
                     onChange={() => toggleChecked(task.id)}
                   />{' '}
                   {task.task}
-                </label>
+                </h3>
                 <p>({task.status})</p>
               </span>
               <span>

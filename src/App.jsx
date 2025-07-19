@@ -5,21 +5,24 @@ import Footer from './components/Footer';
 import ToDoList from './components/ToDoList/ToDoList';
 import Galeria from './components/Galeria/Galeria';
 import Dashboard from './components/Dashboard/Dashboard';
+import { TasksProvider } from './context/TasksContext';
 
 function App() {
   return (
     <div className="container">
-      <BrowserRouter>
-        <Navbar />
-        <div className="main">
-          <Routes>
-            <Route path="/" element={<ToDoList />}></Route>
-            <Route path="/galeria" element={<Galeria />}></Route>
-            <Route path="/dashboard" element={<Dashboard />}></Route>
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
+      <TasksProvider>
+        <BrowserRouter>
+          <Navbar />
+          <div className="main">
+            <Routes>
+              <Route path="/" element={<ToDoList />}></Route>
+              <Route path="/galeria" element={<Galeria />}></Route>
+              <Route path="/dashboard" element={<Dashboard />}></Route>
+            </Routes>
+          </div>
+          <Footer />
+        </BrowserRouter>
+      </TasksProvider>
     </div>
   );
 }
