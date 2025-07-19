@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='text'], select {
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type='text']:focus, select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+  background-color: #fff;
+}
+
+.btn {
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-primary{
+  background-color: #93c249;
+}
+
+.btn-danger{
+  background-color: #dc3545;
+}
+
+.btn-danger:hover{
+  background-color: #c82333;
+}
+
+.btn-primary:hover {
+  background-color: #7faa3e;
+}
+
+.btn-primary:active {
+  background-color: #6d9335;
+}

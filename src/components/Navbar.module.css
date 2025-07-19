@@ -1,0 +1,45 @@
+.navbar{
+  display: flex;
+  background-color:#1E1E2F;
+  justify-content: space-between;
+  color: #fff;
+  flex-wrap: wrap;
+  padding: .5rem;
+  min-height: 7rem;
+  max-height: 10rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.logo h1{
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.linkList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkList li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.linkList li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.linkList li a:hover{
+  color: rgba(255, 255, 255, .8);
+}

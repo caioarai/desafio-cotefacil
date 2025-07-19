@@ -1,0 +1,6 @@
+.main{
+  min-height: calc(100vh - 7rem);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}

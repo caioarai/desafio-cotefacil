@@ -1,0 +1,27 @@
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.taskList{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.task{
+  background-color: #e0e0e0;
+  margin-top: .5em;
+  text-align: left;
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 300px;
+}
+
+.task label{
+  font-weight: bold;
+}
