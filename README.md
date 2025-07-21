@@ -1,12 +1,47 @@
-# React + Vite
+# Desafio Cotefácil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém três projetos feitos com **React** e **Vite**:
 
-Currently, two official plugins are available:
+- **To-Do List**
+- **Galeria de Fotos**
+- **Dashboard de Tarefas**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 📝 **To-Do List**: 
+  - Adicionar, editar, excluir e checar tarefas.
+  - Salvar automaticamente as tarefas usando **localStorage** (não perde ao atualizar a página).
+- 🖼️ **Galeria de Fotos**: Filtro de imagens, adicionar novas imagens e exibir imagens com persistência de dados.
+- 📊 **Dashboard de Tarefas**: Visualização e gerenciamento de tarefas com estado global usando **React Context API**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologias utilizadas
+
+- React
+- Vite (para bundling e desenvolvimento rápido)
+- React Router DOM
+- React Context API
+- localStorage
+- API externa Unsplash
+- HTML5
+- CSS3
+- JavaScript
+
+## 📦 Instalação e uso
+
+Siga os passos abaixo para rodar o projeto localmente:
+
+```bash
+# Clone este repositório
+git clone https://github.com/caioarai/desafio-cotefacil.git
+
+# Acesse a pasta do projeto
+cd desafio-cotefacil
+
+# Instale as dependências
+npm install
+
+# Adicione sua chave de acesso da API Unsplash:
+VITE_ACCESS_KEY=sua_access_key_aqui
+
+# Inicie o servidor de desenvolvimento
+npm run dev
