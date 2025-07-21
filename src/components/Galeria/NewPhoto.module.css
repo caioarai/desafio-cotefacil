@@ -4,8 +4,6 @@
 }
 
 .newPhoto form input[type='text']{
-  width: 400px;
-  max-width: 100%;
   margin-bottom: .8rem;
 }
 
