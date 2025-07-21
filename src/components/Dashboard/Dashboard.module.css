@@ -10,7 +10,7 @@
 }
 
 .dashboard .title h2{
-  margin-left: .5rem;
+  margin: .5rem;
 }
 
 .grafico{
@@ -38,13 +38,4 @@
 
 .box:hover {
   background-color: #99ccff;
-}
-
-.backArrow{
-  cursor: pointer;
-}
-
-.backArrow:hover {
-  color: #666666;
-  text-decoration: underline;
 }

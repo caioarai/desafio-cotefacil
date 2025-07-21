@@ -13,8 +13,17 @@ const Photo = () => {
       const response = await fetch(
         `https://api.unsplash.com/photos/${id}?client_id=${token}`,
       );
-      const json = await response.json();
+      let json = await response.json();
 
+      if (
+        Array.isArray(json.errors) &&
+        json.errors[0] === "Couldn't find Asset"
+      ) {
+        const storagePhoto = JSON.parse(localStorage.getItem('photos'));
+        const photoFind = storagePhoto.filter((photo) => photo.id == id);
+
+        json = photoFind[0];
+      }
       setPhoto(json);
     }
 
@@ -24,7 +33,7 @@ const Photo = () => {
   const cleanSlug = (slug) => slug?.split('-').slice(0, -1).join(' ');
 
   if (photo == null) {
-    return <p>Erro ao visualizar foto</p>;
+    return <p>Carregando...</p>;
   }
 
   if (Array.isArray(photo.errors) && photo.errors.length > 0) {

@@ -46,7 +46,7 @@ const Dashboard = () => {
       </div>
 
       {filter != null && (
-        <span className={styles.backArrow} onClick={() => setFilter(null)}>
+        <span className="backArrow" onClick={() => setFilter(null)}>
           <IoArrowUndoSharp /> Voltar
         </span>
       )}

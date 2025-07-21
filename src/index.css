@@ -72,3 +72,17 @@ input[type='text']:focus, select:focus {
 .task h3{
   font-size: 20px;
 }
+
+.backArrow{
+  cursor: pointer;
+}
+
+.backArrow:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}

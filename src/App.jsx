@@ -1,12 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+
+//Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ToDoList from './components/ToDoList/ToDoList';
 import Galeria from './components/Galeria/Galeria';
 import Dashboard from './components/Dashboard/Dashboard';
-import { TasksProvider } from './context/TasksContext';
 import Photo from './components/Galeria/Photo';
+import NewPhoto from './components/Galeria/NewPhoto';
+
+//Context
+import { TasksProvider } from './context/TasksContext';
 
 function App() {
   return (
@@ -19,6 +24,7 @@ function App() {
               <Route path="/" element={<ToDoList />}></Route>
               <Route path="/galeria" element={<Galeria />}></Route>
               <Route path="/galeria/photo/:id" element={<Photo />}></Route>
+              <Route path="/galeria/photo/new" element={<NewPhoto />}></Route>
               <Route path="/dashboard" element={<Dashboard />}></Route>
             </Routes>
           </div>

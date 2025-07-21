@@ -1,11 +1,10 @@
-.galeria h2{
+.sectionList h2{
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
+.sectionList svg{
+  cursor: pointer;
 }
 
 .taskList{

@@ -27,7 +27,7 @@ const ToDoList = () => {
   return (
     <section className={styles.sectionList}>
       <h2>Adicione uma tarefa</h2>
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <label htmlFor="task">Tarefa:</label>
         <input
           type="text"
