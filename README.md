@@ -40,7 +40,7 @@ cd desafio-cotefacil
 # Instale as dependências
 npm install
 
-# Adicione sua chave de acesso da API Unsplash:
+# Crie um arquivo .env e adicione sua chave de acesso da API Unsplash:
 VITE_ACCESS_KEY=sua_access_key_aqui
 
 # Inicie o servidor de desenvolvimento
